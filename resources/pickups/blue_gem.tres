@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Gem" load_steps=4 format=3 uid="uid://uy0uv5sx2ato"]
+
+[ext_resource type="Texture2D" uid="uid://dyth85h76pxn2" path="res://assets/pickups/blue_gem.png" id="1_aq7kq"]
+[ext_resource type="Script" uid="uid://bxhyvijhqcegm" path="res://scripts/Gem.gd" id="2_t5sts"]
+[ext_resource type="AudioStream" uid="uid://i6sqfc61e6tw" path="res://assets/sfx/POP Brust 01.wav" id="3_t5sts"]
+
+[resource]
+script = ExtResource("2_t5sts")
+XP = 1.0
+title = "Blue Gem"
+icon = ExtResource("1_aq7kq")
+description = "Gains Experience Points."
+sound = ExtResource("3_t5sts")
+metadata/_custom_type_script = "uid://bxhyvijhqcegm"

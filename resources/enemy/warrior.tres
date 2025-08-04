@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=5 format=3 uid="uid://p83yv4d60t8g"]
+
+[ext_resource type="Script" uid="uid://drxib08jmkiu1" path="res://scripts/PickupResource.gd" id="1_o1rbv"]
+[ext_resource type="Script" uid="uid://csgvm6j4n0n65" path="res://scripts/EnemyType.gd" id="1_r3jv7"]
+[ext_resource type="Resource" uid="uid://dcfg2wqf5d3lb" path="res://resources/pickups/green_gem.tres" id="2_o1rbv"]
+[ext_resource type="Texture2D" uid="uid://cdx48j8ymv6b" path="res://assets/enemy/41.png" id="2_r3jv7"]
+
+[resource]
+script = ExtResource("1_r3jv7")
+title = "Warrior"
+texture = ExtResource("2_r3jv7")
+health = 3.0
+damage = 5.0
+drops = Array[ExtResource("1_o1rbv")]([ExtResource("2_o1rbv")])
+metadata/_custom_type_script = "uid://csgvm6j4n0n65"

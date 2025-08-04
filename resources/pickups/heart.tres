@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Health" load_steps=4 format=3 uid="uid://2f2pbehtyndu"]
+
+[ext_resource type="Texture2D" uid="uid://ujyxcfxrs6qb" path="res://assets/pickups/Heart.png" id="1_p2gih"]
+[ext_resource type="Script" uid="uid://ccqvmvjpukmo8" path="res://scripts/Health.gd" id="2_egoir"]
+[ext_resource type="AudioStream" uid="uid://hq4hxqqvexaw" path="res://assets/sfx/SUCCESS CHIME Bells Sparkle Tune Short 02.wav" id="3_egoir"]
+
+[resource]
+script = ExtResource("2_egoir")
+amount = 20
+title = "Heart"
+icon = ExtResource("1_p2gih")
+description = "+20 Health"
+sound = ExtResource("3_egoir")
+metadata/_custom_type_script = "uid://ccqvmvjpukmo8"

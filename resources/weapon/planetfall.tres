@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Circular" load_steps=6 format=3 uid="uid://vt2viux74lub"]
+
+[ext_resource type="Texture2D" uid="uid://itovo4f8rnep" path="res://assets/weapon/protect-blue-3.png" id="1_k4duo"]
+[ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="2_yri6o"]
+[ext_resource type="Script" uid="uid://k5k8kkby7x5x" path="res://scripts/CircularWeapon.gd" id="3_yj5ek"]
+[ext_resource type="Texture2D" uid="uid://cq04heh3637ef" path="res://assets/weapon/scroll-purple.png" id="4_tbxvp"]
+[ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="5_lkn2w"]
+
+[resource]
+script = ExtResource("3_yj5ek")
+angular_speed = 270.0
+radius = 90.0
+amount = 5
+damage = 10.0
+cooldown = 2.0
+speed = 0.0
+projectile_node = ExtResource("2_yri6o")
+upgrades = Array[ExtResource("5_lkn2w")]([])
+title = "Planetfall"
+icon = ExtResource("1_k4duo")
+texture = ExtResource("4_tbxvp")
+metadata/_custom_type_script = "uid://k5k8kkby7x5x"

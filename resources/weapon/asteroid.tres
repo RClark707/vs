@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="Circular" load_steps=14 format=3 uid="uid://bm2m18mbnmdgs"]
+
+[ext_resource type="Resource" uid="uid://vt2viux74lub" path="res://resources/weapon/planetfall.tres" id="1_b4657"]
+[ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="1_xwhy2"]
+[ext_resource type="Script" uid="uid://k5k8kkby7x5x" path="res://scripts/CircularWeapon.gd" id="2_ka66r"]
+[ext_resource type="Resource" uid="uid://cknybgoqxa0bn" path="res://resources/items/area.tres" id="3_b4657"]
+[ext_resource type="Texture2D" uid="uid://dg06phfi7p5sr" path="res://assets/weapon/protect-blue-1.png" id="3_vdb17"]
+[ext_resource type="Texture2D" uid="uid://cq04heh3637ef" path="res://assets/weapon/scroll-purple.png" id="4_vdb17"]
+[ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="4_xhky2"]
+[ext_resource type="Script" uid="uid://c05b3rkf2kps0" path="res://scripts/CircularUpgrade.gd" id="5_ka66r"]
+
+[sub_resource type="Resource" id="Resource_vdb17"]
+script = ExtResource("5_ka66r")
+angular_speed = 0.0
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Asteroid"
+metadata/_custom_type_script = "uid://c05b3rkf2kps0"
+
+[sub_resource type="Resource" id="Resource_xhky2"]
+script = ExtResource("5_ka66r")
+angular_speed = 0.0
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Asteroid"
+metadata/_custom_type_script = "uid://c05b3rkf2kps0"
+
+[sub_resource type="Resource" id="Resource_b4657"]
+script = ExtResource("5_ka66r")
+angular_speed = 50.0
+amount = 0
+damage = 0.0
+cooldown = 0.0
+description = "+50 Asteroid Speed"
+metadata/_custom_type_script = "uid://c05b3rkf2kps0"
+
+[sub_resource type="Resource" id="Resource_vuo6e"]
+script = ExtResource("5_ka66r")
+angular_speed = 0.0
+amount = 0
+damage = 1.0
+cooldown = 0.0
+description = "+1 Asteroid Damage"
+metadata/_custom_type_script = "uid://c05b3rkf2kps0"
+
+[sub_resource type="Resource" id="Resource_qe04f"]
+script = ExtResource("5_ka66r")
+angular_speed = 0.0
+amount = 0
+damage = 1.0
+cooldown = 0.0
+description = "+1 Asteroid Damage"
+metadata/_custom_type_script = "uid://c05b3rkf2kps0"
+
+[resource]
+script = ExtResource("2_ka66r")
+angular_speed = 90.0
+radius = 75.0
+amount = 1
+damage = 2.0
+cooldown = 2.0
+speed = 0.0
+projectile_node = ExtResource("1_xwhy2")
+upgrades = Array[ExtResource("4_xhky2")]([SubResource("Resource_vdb17"), SubResource("Resource_xhky2"), SubResource("Resource_b4657"), SubResource("Resource_vuo6e"), SubResource("Resource_qe04f")])
+item_needed = ExtResource("3_b4657")
+evolution = ExtResource("1_b4657")
+title = "Asteroid"
+icon = ExtResource("3_vdb17")
+texture = ExtResource("4_vdb17")
+metadata/_custom_type_script = "uid://k5k8kkby7x5x"

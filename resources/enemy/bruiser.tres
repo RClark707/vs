@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=5 format=3 uid="uid://yeawbb4xer33"]
+
+[ext_resource type="Script" uid="uid://csgvm6j4n0n65" path="res://scripts/EnemyType.gd" id="1_2amtk"]
+[ext_resource type="Script" uid="uid://drxib08jmkiu1" path="res://scripts/PickupResource.gd" id="1_plxoo"]
+[ext_resource type="Texture2D" uid="uid://c8qkyk0aaew6l" path="res://assets/enemy/43.png" id="2_2amtk"]
+[ext_resource type="Resource" uid="uid://uy0uv5sx2ato" path="res://resources/pickups/blue_gem.tres" id="2_obos3"]
+
+[resource]
+script = ExtResource("1_2amtk")
+title = "Bruiser"
+texture = ExtResource("2_2amtk")
+health = 1.0
+damage = 1.0
+drops = Array[ExtResource("1_plxoo")]([ExtResource("2_obos3")])
+metadata/_custom_type_script = "uid://csgvm6j4n0n65"

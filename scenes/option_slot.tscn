@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://cft5ic4qwkg3r"]
+
+[ext_resource type="Texture2D" uid="uid://bltqmifrmpr3g" path="res://assets/weapon/fireball-eerie-1.png" id="1_5g3fa"]
+[ext_resource type="Texture2D" uid="uid://k6pvsahlplkf" path="res://assets/ui/GUI-1-1.png" id="2_cxwls"]
+[ext_resource type="Script" uid="uid://c4edg8qxgphqx" path="res://scripts/option_slot.gd" id="2_je35h"]
+
+[node name="OptionSlot" type="TextureButton"]
+custom_minimum_size = Vector2(315, 40)
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+texture_normal = ExtResource("1_5g3fa")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("2_je35h")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 5.0
+offset_right = 102.0
+offset_bottom = 35.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="."]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 5.0
+offset_right = 309.0
+offset_bottom = 35.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+show_behind_parent = true
+custom_minimum_size = Vector2(315, 40)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_cxwls")
+region_rect = Rect2(0, 0, 30, 30)
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

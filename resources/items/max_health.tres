@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://22bhoy2x5cuu"]
+
+[ext_resource type="Script" uid="uid://jr44rngkma3o" path="res://scripts/PassiveItem.gd" id="1_n3b5t"]
+[ext_resource type="Texture2D" uid="uid://cm8ru62cnk8kj" path="res://assets/items/heal-royal-1.png" id="2_kf15u"]
+[ext_resource type="Script" uid="uid://c41qhoqv425o0" path="res://scripts/Stats.gd" id="3_1uqt3"]
+
+[sub_resource type="Resource" id="Resource_ycud8"]
+script = ExtResource("3_1uqt3")
+description = "+20 Max Health"
+max_health = 20.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+metadata/_custom_type_script = "uid://c41qhoqv425o0"
+
+[sub_resource type="Resource" id="Resource_xnc2i"]
+script = ExtResource("3_1uqt3")
+description = "+25 Max Health"
+max_health = 25.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+metadata/_custom_type_script = "uid://c41qhoqv425o0"
+
+[sub_resource type="Resource" id="Resource_p2tth"]
+script = ExtResource("3_1uqt3")
+description = "+30 Max Health"
+max_health = 30.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+metadata/_custom_type_script = "uid://c41qhoqv425o0"
+
+[resource]
+script = ExtResource("1_n3b5t")
+upgrades = Array[ExtResource("3_1uqt3")]([SubResource("Resource_ycud8"), SubResource("Resource_xnc2i"), SubResource("Resource_p2tth")])
+title = "Max Health"
+icon = ExtResource("2_kf15u")
+metadata/_custom_type_script = "uid://jr44rngkma3o"

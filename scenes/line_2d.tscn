@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dxypgsu14qt14"]
+
+[node name="Line2D" type="Line2D"]
+closed = true
+width = 2.0
+default_color = Color(1, 0.560513, 0.84883, 1)

@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://ci0cwuctp4mdx"]
+
+[ext_resource type="Script" uid="uid://jr44rngkma3o" path="res://scripts/PassiveItem.gd" id="1_4ml4h"]
+[ext_resource type="Texture2D" uid="uid://ccojs00tfj4i4" path="res://assets/items/vines-eerie-1.png" id="2_bqjdr"]
+[ext_resource type="Script" uid="uid://c41qhoqv425o0" path="res://scripts/Stats.gd" id="3_ifyj4"]
+
+[sub_resource type="Resource" id="Resource_bln5v"]
+script = ExtResource("3_ifyj4")
+description = "+0.2 XP Gain"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.2
+metadata/_custom_type_script = "uid://c41qhoqv425o0"
+
+[sub_resource type="Resource" id="Resource_lod7m"]
+script = ExtResource("3_ifyj4")
+description = "+0.5 XP Gain"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.5
+metadata/_custom_type_script = "uid://c41qhoqv425o0"
+
+[sub_resource type="Resource" id="Resource_1dtlw"]
+script = ExtResource("3_ifyj4")
+description = "+0.3 XP Gain"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.3
+metadata/_custom_type_script = "uid://c41qhoqv425o0"
+
+[resource]
+script = ExtResource("1_4ml4h")
+upgrades = Array[ExtResource("3_ifyj4")]([SubResource("Resource_bln5v"), SubResource("Resource_lod7m"), SubResource("Resource_1dtlw")])
+title = "Growth"
+icon = ExtResource("2_bqjdr")
+metadata/_custom_type_script = "uid://jr44rngkma3o"

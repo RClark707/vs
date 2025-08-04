@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cmyttbra0pwfk"
+path="res://.godot/imported/MECH Engine Motor Rev 03.wav-6e2eeef9dde7681934f95ac02c7187ba.sample"
+
+[deps]
+
+source_file="res://assets/sfx/MECH Engine Motor Rev 03.wav"
+dest_files=["res://.godot/imported/MECH Engine Motor Rev 03.wav-6e2eeef9dde7681934f95ac02c7187ba.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
