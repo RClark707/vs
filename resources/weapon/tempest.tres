@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://c63d1aw5m1qlv" path="res://assets/weapon/lighting-royal-3.png" id="1_upj5n"]
 [ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="2_mxmji"]
-[ext_resource type="Script" uid="uid://dvy20pe46fwgc" path="res://scripts/LightningWeapon.gd" id="3_if4wj"]
-[ext_resource type="AudioStream" uid="uid://8i838q171gh2" path="res://assets/sfx/Explosion 1.mp3" id="4_mxmji"]
+[ext_resource type="Script" uid="uid://dvy20pe46fwgc" path="res://scripts/weapon/LightningWeapon.gd" id="3_if4wj"]
+[ext_resource type="AudioStream" uid="uid://8i838q171gh2" path="res://assets/sfx/lightning_strike.mp3" id="4_mxmji"]
 [ext_resource type="Texture2D" uid="uid://c1nnsfkqhjwiw" path="res://assets/weapon/zap_resized.png" id="4_ncbmo"]
 [ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="5_oy28k"]
 

@@ -1,0 +1,74 @@
+[gd_resource type="Resource" script_class="MultiDamagingArea" load_steps=15 format=3 uid="uid://cv3iw4y5pi0af"]
+
+[ext_resource type="Texture2D" uid="uid://b0q7m3ggmyids" path="res://assets/weapon/fog-orange-2.png" id="1_du6ca"]
+[ext_resource type="Resource" uid="uid://c3gekuec3nu7r" path="res://resources/weapon/hell_field.tres" id="1_s1ltq"]
+[ext_resource type="Resource" uid="uid://22bhoy2x5cuu" path="res://resources/items/max_health.tres" id="2_s1ltq"]
+[ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="3_al5uf"]
+[ext_resource type="Script" uid="uid://c2646dwdaxbsk" path="res://scripts/weapon/MultiDamagingArea.gd" id="4_66f7s"]
+[ext_resource type="AudioStream" uid="uid://dlqxu6rau5g6u" path="res://assets/sfx/fireblast.wav" id="5_8fskc"]
+[ext_resource type="Texture2D" uid="uid://dnemsfcp7it82" path="res://assets/weapon/cloud_chaos_1.png" id="6_gq7yg"]
+[ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="7_wa83m"]
+[ext_resource type="Script" uid="uid://dha6t3xbrspp6" path="res://scripts/weapon/MultiDamagingAreaUpgrade.gd" id="9_al5uf"]
+
+[sub_resource type="Resource" id="Resource_66f7s"]
+script = ExtResource("9_al5uf")
+amount = 1
+area = 0.0
+damage = 0.0
+cooldown = 0.0
+description = "+1 Fireball"
+metadata/_custom_type_script = "uid://dha6t3xbrspp6"
+
+[sub_resource type="Resource" id="Resource_8fskc"]
+script = ExtResource("9_al5uf")
+amount = 2
+area = 0.0
+damage = 0.0
+cooldown = 0.0
+description = "+2 Fireballs"
+metadata/_custom_type_script = "uid://dha6t3xbrspp6"
+
+[sub_resource type="Resource" id="Resource_gq7yg"]
+script = ExtResource("9_al5uf")
+amount = 0
+area = 0.0
+damage = 1.0
+cooldown = 0.0
+description = "+1 Damage"
+metadata/_custom_type_script = "uid://dha6t3xbrspp6"
+
+[sub_resource type="Resource" id="Resource_wa83m"]
+script = ExtResource("9_al5uf")
+amount = 0
+area = 0.0
+damage = 0.0
+cooldown = 0.5
+description = "-0.5s Cooldown"
+metadata/_custom_type_script = "uid://dha6t3xbrspp6"
+
+[sub_resource type="Resource" id="Resource_61ow3"]
+script = ExtResource("9_al5uf")
+amount = 2
+area = 0.0
+damage = 0.0
+cooldown = 0.0
+description = "+2 Fireballs"
+metadata/_custom_type_script = "uid://dha6t3xbrspp6"
+
+[resource]
+script = ExtResource("4_66f7s")
+amount = 1
+area = 1.5
+delay = 0.2
+damage = 1.0
+cooldown = 4.0
+speed = 0.0
+projectile_node = ExtResource("3_al5uf")
+upgrades = Array[ExtResource("7_wa83m")]([SubResource("Resource_66f7s"), SubResource("Resource_8fskc"), SubResource("Resource_gq7yg"), SubResource("Resource_wa83m"), SubResource("Resource_61ow3")])
+item_needed = ExtResource("2_s1ltq")
+evolution = ExtResource("1_s1ltq")
+sound = ExtResource("5_8fskc")
+title = "Infero"
+icon = ExtResource("1_du6ca")
+texture = ExtResource("6_gq7yg")
+metadata/_custom_type_script = "uid://c2646dwdaxbsk"

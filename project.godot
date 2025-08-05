@@ -46,6 +46,8 @@ folder_colors={
 "res://resources/items/": "gray",
 "res://resources/pickups/": "teal",
 "res://resources/weapon/": "yellow",
+"res://scripts/pickups/": "teal",
+"res://scripts/weapon/": "yellow",
 "res://shaders/": "pink"
 }
 

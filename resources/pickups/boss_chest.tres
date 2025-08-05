@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="Chest" load_steps=4 format=3 uid="uid://c5qduk2h8wiun"]
 
 [ext_resource type="Texture2D" uid="uid://bn7x5c82ejhat" path="res://assets/pickups/Chest.png" id="1_muu28"]
-[ext_resource type="Script" uid="uid://cta672logwt86" path="res://scripts/ChestResource.gd" id="2_mcsos"]
-[ext_resource type="AudioStream" uid="uid://bsn6nwm70vsis" path="res://assets/sfx/COINS Collect Jackpot Win 01.wav" id="3_mcsos"]
+[ext_resource type="Script" uid="uid://cta672logwt86" path="res://scripts/pickups/ChestResource.gd" id="2_mcsos"]
+[ext_resource type="AudioStream" uid="uid://bsn6nwm70vsis" path="res://assets/sfx/coins_jackpot.wav" id="3_mcsos"]
 
 [resource]
 script = ExtResource("2_mcsos")

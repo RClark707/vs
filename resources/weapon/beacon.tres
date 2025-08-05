@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="DamagingArea" load_steps=7 format=3 uid="uid://bh2jd1mfxyqcu"]
+
+[ext_resource type="Texture2D" uid="uid://c3yxm3yo50v72" path="res://assets/weapon/link-blue-3.png" id="1_p7u3q"]
+[ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="2_3meua"]
+[ext_resource type="Script" uid="uid://cl86fnphfio71" path="res://scripts/weapon/DamagingArea.gd" id="3_uv0w8"]
+[ext_resource type="AudioStream" uid="uid://cqcqvih4j2sr3" path="res://assets/sfx/area_damage.wav" id="4_6f5gb"]
+[ext_resource type="Texture2D" uid="uid://cbg6cg7naffg5" path="res://assets/weapon/rune2.png" id="5_2cfg1"]
+[ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="6_8uxsy"]
+
+[resource]
+script = ExtResource("3_uv0w8")
+angular_speed = 15.0
+area = 1.25
+damage = 3.0
+cooldown = 0.5
+speed = 0.0
+projectile_node = ExtResource("2_3meua")
+upgrades = Array[ExtResource("6_8uxsy")]([])
+sound = ExtResource("4_6f5gb")
+title = "Beacon"
+icon = ExtResource("1_p7u3q")
+texture = ExtResource("5_2cfg1")
+metadata/_custom_type_script = "uid://cl86fnphfio71"

@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="SingleShot" load_steps=7 format=3 uid="uid://cim1gjpqk8vvr"]
 
 [ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="1_yyqj6"]
-[ext_resource type="Script" uid="uid://bn36fj5gvwyyw" path="res://scripts/SingleShot.gd" id="2_yyqj6"]
-[ext_resource type="AudioStream" uid="uid://ix5sqqph7g8b" path="res://assets/sfx/Comet 1.mp3" id="3_asgse"]
+[ext_resource type="Script" uid="uid://bn36fj5gvwyyw" path="res://scripts/weapon/SingleShot.gd" id="2_yyqj6"]
+[ext_resource type="AudioStream" uid="uid://ix5sqqph7g8b" path="res://assets/sfx/magic_missile.mp3" id="3_asgse"]
 [ext_resource type="Texture2D" uid="uid://coyl531idqpbx" path="res://assets/weapon/fire-arrows-magenta-3.png" id="3_pebub"]
 [ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="4_7r6ey"]
 [ext_resource type="Texture2D" uid="uid://bbr6ltwu1uyv6" path="res://assets/weapon/magic_dart_0.png" id="5_pebub"]

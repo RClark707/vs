@@ -30,6 +30,7 @@ var magnet: float = 0:
 		magnet = value
 		%Magnet.shape.radius = 50 + value
 var growth: float = 1
+var luck: float = 1.0
 
 var nearest_enemy
 var nearest_enemy_distance: float = 150 + area
@@ -87,7 +88,7 @@ func gain_XP(amount: int):
 	total_XP += amount * growth
 
 func check_XP():
-	if XP > %XP.max_value:
+	if XP >= %XP.max_value:
 		XP -= %XP.max_value
 		level += 1
 

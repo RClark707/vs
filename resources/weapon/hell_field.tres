@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MultiDamagingArea" load_steps=7 format=3 uid="uid://c3gekuec3nu7r"]
+
+[ext_resource type="Texture2D" uid="uid://dpb3ui5l1jelq" path="res://assets/weapon/fog-orange-3.png" id="1_16ppv"]
+[ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="2_shhua"]
+[ext_resource type="Script" uid="uid://c2646dwdaxbsk" path="res://scripts/weapon/MultiDamagingArea.gd" id="3_q1ydm"]
+[ext_resource type="AudioStream" uid="uid://dlqxu6rau5g6u" path="res://assets/sfx/fireblast.wav" id="4_bxchc"]
+[ext_resource type="Texture2D" uid="uid://dnemsfcp7it82" path="res://assets/weapon/cloud_chaos_1.png" id="5_83480"]
+[ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="6_7bpl5"]
+
+[resource]
+script = ExtResource("3_q1ydm")
+amount = 8
+area = 5.0
+delay = 0.2
+damage = 5.0
+cooldown = 3.0
+speed = 0.0
+projectile_node = ExtResource("2_shhua")
+upgrades = Array[ExtResource("6_7bpl5")]([])
+sound = ExtResource("4_bxchc")
+title = "Hell Field"
+icon = ExtResource("1_16ppv")
+texture = ExtResource("5_83480")
+metadata/_custom_type_script = "uid://c2646dwdaxbsk"

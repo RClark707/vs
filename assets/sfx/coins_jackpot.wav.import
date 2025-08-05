@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bsn6nwm70vsis"
-path="res://.godot/imported/COINS Collect Jackpot Win 01.wav-d604db256eecdba3671696a3897f6d04.sample"
+path="res://.godot/imported/coins_jackpot.wav-4ae7a27f7e6f96402e68036bad44fbfd.sample"
 
 [deps]
 
-source_file="res://assets/sfx/COINS Collect Jackpot Win 01.wav"
-dest_files=["res://.godot/imported/COINS Collect Jackpot Win 01.wav-d604db256eecdba3671696a3897f6d04.sample"]
+source_file="res://assets/sfx/coins_jackpot.wav"
+dest_files=["res://.godot/imported/coins_jackpot.wav-4ae7a27f7e6f96402e68036bad44fbfd.sample"]
 
 [params]
 

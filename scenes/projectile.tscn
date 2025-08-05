@@ -3,8 +3,9 @@
 [ext_resource type="Script" uid="uid://s07rsrwaholh" path="res://scripts/projectile.gd" id="1_c8fcr"]
 [ext_resource type="Texture2D" uid="uid://bbr6ltwu1uyv6" path="res://assets/weapon/magic_dart_0.png" id="2_q3m7n"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6aapk"]
-size = Vector2(10, 10)
+[sub_resource type="CircleShape2D" id="CircleShape2D_q3m7n"]
+resource_local_to_scene = true
+radius = 5.0
 
 [sub_resource type="Gradient" id="Gradient_c8fcr"]
 colors = PackedColorArray(0.791789, 0.000131108, 0.673212, 1, 0.121569, 0.396078, 1, 0.52549)
@@ -44,7 +45,7 @@ script = ExtResource("1_c8fcr")
 texture = ExtResource("2_q3m7n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_6aapk")
+shape = SubResource("CircleShape2D_q3m7n")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 

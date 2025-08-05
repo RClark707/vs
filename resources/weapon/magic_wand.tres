@@ -2,12 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="1_f37t6"]
 [ext_resource type="Resource" uid="uid://cim1gjpqk8vvr" path="res://resources/weapon/magic_barrage.tres" id="1_sfefx"]
-[ext_resource type="Script" uid="uid://bn36fj5gvwyyw" path="res://scripts/SingleShot.gd" id="2_0102x"]
+[ext_resource type="Script" uid="uid://bn36fj5gvwyyw" path="res://scripts/weapon/SingleShot.gd" id="2_0102x"]
 [ext_resource type="Resource" uid="uid://cu54e55xxea7u" path="res://resources/items/magnet.tres" id="2_ch2to"]
 [ext_resource type="Texture2D" uid="uid://bltqmifrmpr3g" path="res://assets/weapon/fireball-eerie-1.png" id="3_rhlb5"]
 [ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="4_0102x"]
-[ext_resource type="Script" uid="uid://dlul2xh6bo24u" path="res://scripts/ProjectileUpgrade.gd" id="5_rhlb5"]
-[ext_resource type="AudioStream" uid="uid://ix5sqqph7g8b" path="res://assets/sfx/Comet 1.mp3" id="5_yr1qt"]
+[ext_resource type="Script" uid="uid://dlul2xh6bo24u" path="res://scripts/weapon/ProjectileUpgrade.gd" id="5_rhlb5"]
+[ext_resource type="AudioStream" uid="uid://ix5sqqph7g8b" path="res://assets/sfx/magic_missile.mp3" id="6_f5p2b"]
 [ext_resource type="Texture2D" uid="uid://bbr6ltwu1uyv6" path="res://assets/weapon/magic_dart_0.png" id="7_f5p2b"]
 
 [sub_resource type="Resource" id="Resource_sfefx"]
@@ -59,7 +59,7 @@ projectile_node = ExtResource("1_f37t6")
 upgrades = Array[ExtResource("4_0102x")]([SubResource("Resource_sfefx"), SubResource("Resource_rhlb5"), SubResource("Resource_ch2to"), SubResource("Resource_yr1qt"), SubResource("Resource_f5p2b")])
 item_needed = ExtResource("2_ch2to")
 evolution = ExtResource("1_sfefx")
-sound = ExtResource("5_yr1qt")
+sound = ExtResource("6_f5p2b")
 title = "Magic Wand"
 icon = ExtResource("3_rhlb5")
 texture = ExtResource("7_f5p2b")

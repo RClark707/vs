@@ -2,12 +2,12 @@
 
 [ext_resource type="Resource" uid="uid://vt2viux74lub" path="res://resources/weapon/planetfall.tres" id="1_b4657"]
 [ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="1_xwhy2"]
-[ext_resource type="Script" uid="uid://k5k8kkby7x5x" path="res://scripts/CircularWeapon.gd" id="2_ka66r"]
+[ext_resource type="Script" uid="uid://k5k8kkby7x5x" path="res://scripts/weapon/CircularWeapon.gd" id="2_ka66r"]
 [ext_resource type="Resource" uid="uid://cknybgoqxa0bn" path="res://resources/items/area.tres" id="3_b4657"]
 [ext_resource type="Texture2D" uid="uid://dg06phfi7p5sr" path="res://assets/weapon/protect-blue-1.png" id="3_vdb17"]
 [ext_resource type="Texture2D" uid="uid://cq04heh3637ef" path="res://assets/weapon/scroll-purple.png" id="4_vdb17"]
 [ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="4_xhky2"]
-[ext_resource type="Script" uid="uid://c05b3rkf2kps0" path="res://scripts/CircularUpgrade.gd" id="5_ka66r"]
+[ext_resource type="Script" uid="uid://c05b3rkf2kps0" path="res://scripts/weapon/CircularUpgrade.gd" id="5_ka66r"]
 
 [sub_resource type="Resource" id="Resource_vdb17"]
 script = ExtResource("5_ka66r")

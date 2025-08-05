@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="Gold" load_steps=4 format=3 uid="uid://w05s82dp7ced"]
 
 [ext_resource type="Texture2D" uid="uid://d1abq8or6twcc" path="res://assets/pickups/Gold_Coin.png" id="1_qrnxn"]
-[ext_resource type="Script" uid="uid://ymexjlj0pdxa" path="res://scripts/Gold.gd" id="2_ibscc"]
-[ext_resource type="AudioStream" uid="uid://ovck1qhbclph" path="res://assets/sfx/COINS Collect Chime 04.wav" id="3_ibscc"]
+[ext_resource type="Script" uid="uid://ymexjlj0pdxa" path="res://scripts/pickups/Gold.gd" id="2_ibscc"]
+[ext_resource type="AudioStream" uid="uid://ovck1qhbclph" path="res://assets/sfx/coins_collect.wav" id="3_ibscc"]
 
 [resource]
 script = ExtResource("2_ibscc")
@@ -11,4 +11,5 @@ title = "Gold"
 icon = ExtResource("1_qrnxn")
 description = "+5 Gold."
 sound = ExtResource("3_ibscc")
+weight = 10.0
 metadata/_custom_type_script = "uid://ymexjlj0pdxa"

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Blade" load_steps=7 format=3 uid="uid://b6m2awgnqrxuv"]
+
+[ext_resource type="Texture2D" uid="uid://dbugnvxq2w4sp" path="res://assets/weapon/slice-orange-3.png" id="1_rqvro"]
+[ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="2_hj04w"]
+[ext_resource type="Script" uid="uid://lmwde86b4wl8" path="res://scripts/weapon/Blade.gd" id="3_mqsjn"]
+[ext_resource type="AudioStream" uid="uid://crmmspqr0arxk" path="res://assets/sfx/blade.wav" id="4_s1tqr"]
+[ext_resource type="Texture2D" uid="uid://bqxbirke6jvbt" path="res://assets/weapon/elven_short_sword.png" id="5_evhdx"]
+[ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="6_7ogd4"]
+
+[resource]
+script = ExtResource("3_mqsjn")
+area = 2.0
+amount = 7
+reversible = true
+delay = 0.2
+damage = 10.0
+cooldown = 2.0
+speed = 800.0
+projectile_node = ExtResource("2_hj04w")
+upgrades = Array[ExtResource("6_7ogd4")]([])
+sound = ExtResource("4_s1tqr")
+title = "Blazing Sword"
+icon = ExtResource("1_rqvro")
+texture = ExtResource("5_evhdx")
+metadata/_custom_type_script = "uid://lmwde86b4wl8"

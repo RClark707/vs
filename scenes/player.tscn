@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://bjxpx24hjhium"]
+[gd_scene load_steps=37 format=3 uid="uid://bjxpx24hjhium"]
 
 [ext_resource type="Script" uid="uid://dmhs5k7vemji2" path="res://scripts/player.gd" id="1_3vyb7"]
 [ext_resource type="Texture2D" uid="uid://cvu86s1m2olyh" path="res://assets/player/53.png" id="2_g2els"]
@@ -6,12 +6,13 @@
 [ext_resource type="Texture2D" uid="uid://dyth85h76pxn2" path="res://assets/pickups/blue_gem.png" id="2_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://dm4daxos1carq" path="res://assets/ui/GUI-0-1.png" id="3_fjrip"]
 [ext_resource type="Script" uid="uid://kxwsxcl8wq27" path="res://scripts/options.gd" id="4_qlg0r"]
+[ext_resource type="Resource" uid="uid://bmqt5clvhjvnt" path="res://resources/weapon/forcefield.tres" id="5_3v2ag"]
+[ext_resource type="Resource" uid="uid://cv3iw4y5pi0af" path="res://resources/weapon/inferno.tres" id="6_jej6c"]
 [ext_resource type="PackedScene" uid="uid://ch182vahw3v6l" path="res://scenes/passive_slot.tscn" id="6_smehm"]
-[ext_resource type="Resource" uid="uid://cu54e55xxea7u" path="res://resources/items/magnet.tres" id="7_ur7pv"]
+[ext_resource type="Resource" uid="uid://3iwcodytgbng" path="res://resources/weapon/blade.tres" id="7_f1ej7"]
+[ext_resource type="AudioStream" uid="uid://bsn6nwm70vsis" path="res://assets/sfx/coins_jackpot.wav" id="9_3v2ag"]
 [ext_resource type="Script" uid="uid://d4h2vrgu6k73o" path="res://scripts/chest.gd" id="9_d2wvv"]
-[ext_resource type="Resource" uid="uid://cknybgoqxa0bn" path="res://resources/items/area.tres" id="9_jej6c"]
 [ext_resource type="Texture2D" uid="uid://cfifvpp2j7hhh" path="res://assets/ui/Fantasy RPG (Toony) 32x32.png" id="9_y4r1p"]
-[ext_resource type="Resource" uid="uid://b8j1ys4q4cx1q" path="res://resources/items/might.tres" id="10_f1ej7"]
 [ext_resource type="Script" uid="uid://ca37gqhcha80m" path="res://scripts/back.gd" id="15_a8ls1"]
 
 [sub_resource type="Gradient" id="Gradient_tuyoq"]
@@ -240,12 +241,15 @@ offset_bottom = 70.0
 
 [node name="Slot" parent="UI/Weapons" instance=ExtResource("2_qhqgy")]
 layout_mode = 2
+item = ExtResource("5_3v2ag")
 
 [node name="Slot2" parent="UI/Weapons" instance=ExtResource("2_qhqgy")]
 layout_mode = 2
+item = ExtResource("6_jej6c")
 
 [node name="Slot3" parent="UI/Weapons" instance=ExtResource("2_qhqgy")]
 layout_mode = 2
+item = ExtResource("7_f1ej7")
 
 [node name="PassiveItems" type="HBoxContainer" parent="UI"]
 offset_left = 20.0
@@ -255,15 +259,12 @@ offset_bottom = 120.0
 
 [node name="PassiveSlot" parent="UI/PassiveItems" instance=ExtResource("6_smehm")]
 layout_mode = 2
-item = ExtResource("7_ur7pv")
 
 [node name="PassiveSlot2" parent="UI/PassiveItems" instance=ExtResource("6_smehm")]
 layout_mode = 2
-item = ExtResource("9_jej6c")
 
 [node name="PassiveSlot3" parent="UI/PassiveItems" instance=ExtResource("6_smehm")]
 layout_mode = 2
-item = ExtResource("10_f1ej7")
 
 [node name="XP" type="ProgressBar" parent="UI"]
 unique_name_in_owner = true
@@ -322,6 +323,7 @@ patch_margin_top = 7
 patch_margin_right = 7
 patch_margin_bottom = 6
 script = ExtResource("9_d2wvv")
+sound = ExtResource("9_3v2ag")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="UI/Chest"]
 position = Vector2(150, 112)

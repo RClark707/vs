@@ -2,7 +2,7 @@ extends Sprite2D
 
 var frame_counter = 0
 var separation: float
-var health: float = 10:
+@export var health: float = 10:
     set(value):
         health = value
         if health <= 0:
@@ -31,7 +31,20 @@ func take_damage(amount: float = 1):
     tween.bind_node(self)
 
 func drop_item():
-    var item = drops.pick_random()
+    var item: Pickups
+    var weights = []
+
+    for pickup in drops:
+        if pickup is Gold:
+            weights.append(pickup.weight)
+        else:
+            weights.append(pickup.weight * player_reference.luck)
+
+    var chance = randf()
+    for i in range(drops.size()):
+        if chance < get_weighted_chance(weights, i):
+            item = drops[i]
+            break
 
     var item_to_drop = drop_node.instantiate()
 
@@ -41,3 +54,14 @@ func drop_item():
 
     get_tree().current_scene.add_child(item_to_drop)
     queue_free()
+
+func get_weighted_chance(weight, index):
+    var sum = 0
+    for i in range(weight.size()):
+        sum += weight[i]
+
+    var cumulative = 0
+    for i in range(index + 1):
+        cumulative += weight[i]
+    
+    return float(cumulative)/sum

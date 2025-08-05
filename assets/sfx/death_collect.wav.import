@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cshkaf0k6p668"
-path="res://.godot/imported/NEGATIVE Failure Beeps 01.wav-17bb85c0d1dded74468f9adbc90252a8.sample"
+path="res://.godot/imported/death_collect.wav-945ad92dd853905e481a13be82e3b2c9.sample"
 
 [deps]
 
-source_file="res://assets/sfx/NEGATIVE Failure Beeps 01.wav"
-dest_files=["res://.godot/imported/NEGATIVE Failure Beeps 01.wav-17bb85c0d1dded74468f9adbc90252a8.sample"]
+source_file="res://assets/sfx/death_collect.wav"
+dest_files=["res://.godot/imported/death_collect.wav-945ad92dd853905e481a13be82e3b2c9.sample"]
 
 [params]
 

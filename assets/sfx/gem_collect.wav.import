@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://i6sqfc61e6tw"
-path="res://.godot/imported/POP Brust 01.wav-30fd38133c8e7ffe364d261184170710.sample"
+path="res://.godot/imported/gem_collect.wav-e5569378c3438adc6d91ab7e878c8826.sample"
 
 [deps]
 
-source_file="res://assets/sfx/POP Brust 01.wav"
-dest_files=["res://.godot/imported/POP Brust 01.wav-30fd38133c8e7ffe364d261184170710.sample"]
+source_file="res://assets/sfx/gem_collect.wav"
+dest_files=["res://.godot/imported/gem_collect.wav-e5569378c3438adc6d91ab7e878c8826.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cmyttbra0pwfk"
-path="res://.godot/imported/MECH Engine Motor Rev 03.wav-6e2eeef9dde7681934f95ac02c7187ba.sample"
+path="res://.godot/imported/vacuum_collect.wav-2972fabc577fb6e61431d19da6c6622a.sample"
 
 [deps]
 
-source_file="res://assets/sfx/MECH Engine Motor Rev 03.wav"
-dest_files=["res://.godot/imported/MECH Engine Motor Rev 03.wav-6e2eeef9dde7681934f95ac02c7187ba.sample"]
+source_file="res://assets/sfx/vacuum_collect.wav"
+dest_files=["res://.godot/imported/vacuum_collect.wav-2972fabc577fb6e61431d19da6c6622a.sample"]
 
 [params]
 

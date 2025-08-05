@@ -14,6 +14,7 @@ func upgrade_item():
         return
     
     if player_reference == null:
+        print("no player ref")
         return
     
     var upgrade = upgrades[level - 1]
@@ -26,5 +27,6 @@ func upgrade_item():
     player_reference.area += upgrade.area
     player_reference.magnet += upgrade.magnet
     player_reference.growth += upgrade.growth
+    player_reference.luck += upgrade.luck
 
     level += 1

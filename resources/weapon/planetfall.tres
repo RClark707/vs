@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://itovo4f8rnep" path="res://assets/weapon/protect-blue-3.png" id="1_k4duo"]
 [ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="2_yri6o"]
-[ext_resource type="Script" uid="uid://k5k8kkby7x5x" path="res://scripts/CircularWeapon.gd" id="3_yj5ek"]
+[ext_resource type="Script" uid="uid://k5k8kkby7x5x" path="res://scripts/weapon/CircularWeapon.gd" id="3_yj5ek"]
 [ext_resource type="Texture2D" uid="uid://cq04heh3637ef" path="res://assets/weapon/scroll-purple.png" id="4_tbxvp"]
 [ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="5_lkn2w"]
 

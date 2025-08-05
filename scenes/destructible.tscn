@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b15eul8e8s87l" path="res://assets/Torch Animated.png" id="1_l8yo0"]
 [ext_resource type="Script" uid="uid://bi04r3oucru81" path="res://scripts/destructible.gd" id="2_u70qa"]
-[ext_resource type="Script" uid="uid://drxib08jmkiu1" path="res://scripts/PickupResource.gd" id="3_iw4aa"]
+[ext_resource type="Script" uid="uid://drxib08jmkiu1" path="res://scripts/pickups/PickupResource.gd" id="3_iw4aa"]
 [ext_resource type="Resource" uid="uid://2f2pbehtyndu" path="res://resources/pickups/heart.tres" id="4_aay8l"]
 [ext_resource type="Resource" uid="uid://w05s82dp7ced" path="res://resources/pickups/gold.tres" id="4_iw4aa"]
 [ext_resource type="Resource" uid="uid://b18bcy1xfyce3" path="res://resources/pickups/death.tres" id="5_aay8l"]
@@ -29,6 +29,7 @@ texture = ExtResource("1_l8yo0")
 hframes = 4
 vframes = 2
 script = ExtResource("2_u70qa")
+health = 2.0
 drops = Array[ExtResource("3_iw4aa")]([ExtResource("4_iw4aa"), ExtResource("5_aay8l"), ExtResource("4_aay8l"), ExtResource("6_pma7f")])
 
 [node name="Area2D" type="Area2D" parent="."]

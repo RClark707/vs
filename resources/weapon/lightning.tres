@@ -3,12 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://bgdb4h8kyu2an" path="res://assets/weapon/lightning-blue-1.png" id="1_6srgq"]
 [ext_resource type="Resource" uid="uid://4l7i4kljigvd" path="res://resources/weapon/tempest.tres" id="1_nmido"]
 [ext_resource type="PackedScene" uid="uid://ddbbmrfaq6s25" path="res://scenes/projectile.tscn" id="2_xiso1"]
-[ext_resource type="Script" uid="uid://dvy20pe46fwgc" path="res://scripts/LightningWeapon.gd" id="3_e8exv"]
+[ext_resource type="Script" uid="uid://dvy20pe46fwgc" path="res://scripts/weapon/LightningWeapon.gd" id="3_e8exv"]
 [ext_resource type="Resource" uid="uid://b8j1ys4q4cx1q" path="res://resources/items/might.tres" id="3_ppuk6"]
 [ext_resource type="Script" uid="uid://biaw1q80wwmtr" path="res://scripts/Upgrade.gd" id="5_nmido"]
 [ext_resource type="Texture2D" uid="uid://c1nnsfkqhjwiw" path="res://assets/weapon/zap_resized.png" id="5_xiso1"]
-[ext_resource type="AudioStream" uid="uid://8i838q171gh2" path="res://assets/sfx/Explosion 1.mp3" id="6_nmido"]
-[ext_resource type="Script" uid="uid://dxpgl3vpruwkr" path="res://scripts/LightningUpgrade.gd" id="7_e8exv"]
+[ext_resource type="AudioStream" uid="uid://8i838q171gh2" path="res://assets/sfx/lightning_strike.mp3" id="6_nmido"]
+[ext_resource type="Script" uid="uid://dxpgl3vpruwkr" path="res://scripts/weapon/LightningUpgrade.gd" id="7_e8exv"]
 
 [sub_resource type="Resource" id="Resource_vm6x8"]
 script = ExtResource("7_e8exv")
